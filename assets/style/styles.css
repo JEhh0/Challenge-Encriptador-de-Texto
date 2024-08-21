@@ -1,0 +1,145 @@
+:root {
+  --dark-blue: #0a3871;
+  --white: #f3f5fc;
+  --grey: #d8dfe8;
+  --inter-font: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--inter-font);
+}
+
+header {
+  margin-bottom: 5rem;
+  width: 60%;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
+header img {
+  width: 120px;
+  height: 48px;
+}
+
+.input__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70dvh;
+}
+
+.txt__input {
+  width: 100%;
+  max-width: 577px;
+  height: 64dvh;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: var(--inter-font);
+  font-size: 3.2rem;
+  color: var(--dark-blue);
+  margin-bottom: 3rem;
+  overflow: auto;
+  resize: none;
+}
+
+::placeholder {
+  color: var(--dark-blue);
+}
+
+.alert_msg {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn__container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.encript__btn {
+  background: var(--dark-blue);
+  color: white;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  border: 1px solid var(--dark-blue);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.encript__btn__secundary {
+  background: transparent;
+  color: var(--dark-blue);
+}
+
+.result {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  height: 80dvh;
+  border-radius: 32px;
+  max-width: 40rem;
+  width: 100%;
+  padding: 0.1rem 3rem;
+}
+
+.result__msg {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #343A40;
+}
+
+.result__instrctn {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.deco__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn__container {
+    justify-content: center;
+  }
+
+  .result {
+    height: auto;
+    max-width: 624px;
+    margin-top: 2rem;
+    min-height: 186px;
+  }
+
+  header img {
+    width: 73px;
+  }
+}
